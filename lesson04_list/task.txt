@@ -1,0 +1,14 @@
+1 npx create-react-app front
+2 створити масив обектів
+ const User = [
+ {
+ id:
+ name:
+ description:
+ img:
+ }
+ ] // шоб він був компонентом
+
+ 3 : створити компонент Cart id name img description
+
+ 4 вивести в <App />
