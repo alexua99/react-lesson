@@ -37,18 +37,26 @@ export default function RickAndMorty() {
 
     function changeState() {
 
-        console.log(inpValue.current.value);
+        let newDD = []
+        data?.results.map(item => {
+            let newArr = item.name.toLocaleLowerCase();
+            data?.results.map(item => newArr.indexOf(inpValue.current.value) >= 0 && newDD.push(item))
+
+        })
+        setOut(newDD)
     }
 
 
     function selectChange(event) {
 
-        let newOptionRick = []
-        data?.results.map(item => (
-            item.species === event.target.value && newOptionRick.push(item)
-        ))
+        // let newOptionRick = []
+        // data?.results.map(item =>
+        // (
+        //     item.species === event.target.value && newOptionRick.push(item)
+        // )
+        // )
 
-        setOut(newOptionRick)
+        // setOut(newOptionRick)
     }
 
     return isLoading ? <h1>...isLoading</h1> :
