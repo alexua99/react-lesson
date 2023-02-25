@@ -8,3 +8,9 @@
     padding: 10px;
     border: 1px solid;
 }
+
+.rick__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
